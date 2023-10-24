@@ -13,6 +13,7 @@ litaDeTeclas[0].onclick = tocaSomPom
 //criando variavel contador, atribuindo o valor inicial como 0
 let contador = 0;
 //criando o código de repetição while
+//enquanto o contador for menos que o comprimento da lista tocara o som
 while(contador < listaDeTeclas.length){
     listadeTeclas [contador].onclick = tocaSomPom;
     contador = contador + 1;
