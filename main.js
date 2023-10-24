@@ -3,7 +3,7 @@ function tocaSom(idElementoAudio){
     document.querySelector(idElementoAudio).play()  ;
 }
 //chamando/invocando a função tocasompom
-document.querySelector('.tecla_pom').onclick = tocaSomPom; 
+document.querySelector('.tecla_pom').onclick = tocaSom; 
 
 //criando a referência constante litaDeTeclas
 const litaDeTeclas = document.querySelectorAll ('.tecla');
