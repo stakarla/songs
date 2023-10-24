@@ -13,6 +13,8 @@ litaDeTeclas[0].onclick = tocaSomPom
 //criando variavel contador, atribuindo o valor inicial como 0
 let contador = 0;
 //criando o código de repetição while
-while(){
-
+while(contador < 9){
+    listadeTeclas [contador].onclick = tocaSomPom;
+    contador = contador + 1;
+    console.log(contador);
 }
