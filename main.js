@@ -1,6 +1,6 @@
-//criando/declarando a função tocasompom
-function tocaSomPom(){
-    document.querySelector('#som_tecla_pom').play()  ;
+//criando/declarando a função tocasom com parametro idElementoAudio
+function tocaSom(idElementoAudio){
+    document.querySelector(idElementoAudio).play()  ;
 }
 //chamando/invocando a função tocasompom
 document.querySelector('#som_tecla_pom').onclick = tocaSomPom; 
@@ -13,7 +13,7 @@ litaDeTeclas[0].onclick = tocaSomPom
 //criando variavel contador, atribuindo o valor inicial como 0
 let contador = 0;
 //criando o código de repetição while
-while(contador < 9){
+while(contador < listaDeTeclas.length){
     listadeTeclas [contador].onclick = tocaSomPom;
     contador = contador + 1;
     console.log(contador);
