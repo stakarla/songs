@@ -1,6 +1,11 @@
 //criando/declarando a função tocasom com parametro idElementoAudio
 function tocaSom(idElementoAudio){
-    document.querySelector(idElementoAudio).play()  ;
+    document.querySelector(idElementoAudio);
+    if(elemento && elemento.localName === 'audio'){
+    elemento.play()
+    } else{
+        console.log("elemento inválido ou não encontrado");
+    }
 }
 
 //criando a referência constante litaDeTeclas
